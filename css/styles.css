@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del header */
+header {
+    margin: 40px 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav img {
+    border-radius: 300px;
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    align-self: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+header nav ul li {
+    margin: 20px auto;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin: 40px;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 20px;
+    display: none;
+}
+
+/* Estilos del main*/
+
+/* - Comienzo de estilos main index.html */
+
+.index {
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo'
+    'carousel carousel'
+    'mapa info';
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 30px;
+    margin: 0 20px;
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+.carousel img {
+    height: 500px;
+}
+
+.mapa {
+    grid-area: mapa;
+    width: 100%;
+    justify-self: right;
+}
+
+.info {
+    grid-area: info;
+    justify-self: center;
+}
+
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.iframe-lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+main ul li {
+    list-style: none;
+    text-align: center;
+}
+
+/* - Fin de estilos main index.html */
+
+
+/* - Estilos main fotos.html y productos.html */
+
+.fotos-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.parrafo {
+    margin: 0 10px 0 10px;
+    text-align: justify;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 40px;
+}
+
+
+.box-articulos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 40px auto;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+article {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+
+article h3 {
+    margin: 5px;
+}
+
+article.articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid teal;
+    border-radius: 20px;
+    box-shadow: 5px -7px teal;
+}
+
+article img {
+    width: 300px;
+    height: 200px;
+}
+
+article p {
+    text-align: center;
+    font-style: italic;
+}
+
+article a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* - Fin de estilos de main fotos.html y productos.html */
+
+/* - Comienzo de estilos main nosotros.html */
+.perfil-uno {
+    display: grid;
+    grid-template-columns: 400px auto;
+    margin: 40px 20px;
+}
+
+.perfil-uno p {
+    line-height: 30px;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.perfil-dos {
+    display: grid;
+    grid-template-columns: auto 400px;
+    margin: 40px 20px;
+}
+
+.perfil-dos p {
+    line-height: 30px;
+}
+
+/* - Fin de estilos main nosotros.html */
+
+/* - Comienzo de main contactos.html */
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.contactos p {
+    margin: 20px auto;
+}
+
+.contactos form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.formulario input {
+    width: 33%;
+    height: 30px;
+    margin: 10px 5px;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 5px;
+}
+
+.formulario button {
+    width: 50px;
+    height: 30px;
+}
+/* - Fin de main contactos.html */
+
+/* Estilos del footer */
+footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 40px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fin de estilos footer */
+
+@media only screen and (max-width: 1132px) {
+
+    /* Comienzo Responsive header */
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin: 20px auto;
+        list-style: none;
+    }
+    header nav ul li a {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Fin Responsive header */
+
+    /* Comienzo Responsive index */
+
+    .index img {
+        max-width: 100%;
+    }
+
+    .index .info {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    /* Fin Responsive index */
+
+    /* Comienzo Responsive fotos */
+    .fotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 40px;
+    }
+
+    .fotos-container {
+        margin-bottom: 40px;
+    }
+
+    /* Fin Responsive fotos */
+
+    /* Cominezo Responsive productos */
+    .box-articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .perfil-uno {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .perfil-dos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .foto {
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+    }
+    /* Fin Responsive productos */
+
+    /* Comienzo Responsive footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    footer ul li {
+        margin: 10px 20px;
+    }
+    /* Fin Responsive footer */
+}
+
+@media only screen and (max-width: 742px) and (min-width: 400px){
+
+    /* Comienzo Responsive header*/
+
+    header nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    header nav ul {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: white;
+        text-align: center;
+        align-content: center;
+    }
+
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+    }
+
+    #check:checked ~ ul {
+        display: block;
+    }
+
+    /* Fin Responsive header */
+    
+    /* Comienzo Responsive index*/
+
+    .index{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .index img {
+        max-width: 100%;
+    }
+
+    .carousel {
+        height: 250px;
+    }
+
+    .info li {
+        line-height: 30px;
+    }
+
+    /* Fin Responsive index*/
+
+    /* Comienzo Responsive fotos */
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 40px;
+    }
+
+    /* Fin Responsive fotos */
+
+    /* Comienzo Responsive productos */
+    .box-articulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 40px;
+    }
+    /* Fin Responsive productos */
+
+    /* Comienzo Responsive footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+    footer ul li {
+        margin: 10px 20px;
+    }
+    /* Fin Responsive footer */
+}
