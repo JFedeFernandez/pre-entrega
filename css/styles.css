@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    padding-bottom: 60px;
 }
 
 /* Estilos del header */
@@ -265,7 +270,12 @@ form textarea {
 footer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     height: 40px;
+    border-top: 1px solid black;
+    background-color: white;
 }
 
 footer ul {
@@ -273,6 +283,7 @@ footer ul {
     flex-direction: row;
     align-items: center;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 footer ul li {
@@ -290,6 +301,7 @@ footer p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 /* Fin de estilos footer */
@@ -377,10 +389,14 @@ footer p {
 
     /* Comienzo Responsive footer */
     footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        border-top: 1px solid black;
+        background-color: white;
     }
     
     footer ul li {
@@ -473,7 +489,7 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        height: auto;
     }
 
 
