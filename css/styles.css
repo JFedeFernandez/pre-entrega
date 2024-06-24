@@ -42,6 +42,7 @@ header nav ul li a {
     color: black;
     font-size: large;
     margin: 40px;
+    letter-spacing: 2px;
 }
 
 #check {
@@ -348,6 +349,9 @@ footer p {
         justify-self: center;
     }
 
+    .carousel-inner{
+        height: auto;
+    }
     /* Fin Responsive index */
 
     /* Comienzo Responsive fotos */
