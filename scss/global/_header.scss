@@ -1,0 +1,43 @@
+header {
+    margin: 40px 10px;
+
+    #check {
+        display: none;
+    }
+    
+    .checkbtn {
+        font-size: 20px;
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        img {
+            border-radius: 300px;
+            width: 200px;
+        }
+
+        ul {
+            display: flex;
+            align-self: center;
+            margin-bottom: 0;
+            padding-left: 0;
+            width: 100%;
+
+            li {
+                margin: 20px auto;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: large;
+                    margin: 40px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}

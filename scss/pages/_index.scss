@@ -1,0 +1,62 @@
+.index {
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo'
+    'carousel carousel'
+    'mapa info';
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 30px;
+    margin: 60px 20px;
+
+    .titulo {
+        grid-area: titulo;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .carousel {
+        grid-area: carousel;
+    }
+    
+    .carousel-inner {
+        height: 700px;
+    }
+    
+    .carousel-item {
+        max-height: 700px;
+        
+        img {
+            max-width: 100%;
+            max-height: 700px;
+            display: block;
+            margin: auto;
+        }
+    }
+    
+    .mapa {
+        grid-area: mapa;
+        width: 100%;
+        justify-self: right;
+    }
+    
+    .info {
+        grid-area: info;
+        justify-self: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    ul {
+
+        li{
+            list-style: none;
+            text-align: center;
+        }
+
+    }
+}
