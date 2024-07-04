@@ -11,12 +11,7 @@
     }
 
     .box-articulos {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-content: center;
-        column-gap: 40px;
-        row-gap: 40px;
-        margin: 40px auto;
+        @include card();
     }
 
     .articulos {

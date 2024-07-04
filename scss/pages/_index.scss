@@ -11,6 +11,8 @@
     margin: 60px 20px;
 
     .titulo {
+        font-family: $font-global;
+        font-weight: $max;
         grid-area: titulo;
         text-align: center;
         margin-top: 40px;
