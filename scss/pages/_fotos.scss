@@ -1,0 +1,53 @@
+.fotos-container{
+
+    .parrafo {
+        margin: 0 10px 0 10px;
+        text-align: justify;
+    }
+    
+    .fotos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin: 40px auto;
+    }
+    
+    article {
+        width: 350px;
+        height: 400px;
+        text-align: center;
+    }
+    
+    article {
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+    
+    article{ 
+
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+
+    }
+    
+    article{ 
+
+        a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        padding: 10px;
+        }
+
+    }
+
+}

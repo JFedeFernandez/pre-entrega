@@ -1,0 +1,27 @@
+.nosotras {
+    .perfil-uno {
+        display: grid;
+        grid-template-columns: 400px auto;
+        margin: 40px 20px;
+
+        p {
+            line-height: 30px;
+        }
+    }
+    
+    .foto {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .perfil-dos {
+        display: grid;
+        grid-template-columns: auto 400px;
+        margin: 40px 20px;
+
+        p {
+            line-height: 30px;
+        }
+    }
+}
