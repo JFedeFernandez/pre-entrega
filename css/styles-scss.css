@@ -1,7 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
 /* Utilities */
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
 /* Global */
+body {
+  margin-bottom: 60px;
+}
+
+header {
+  margin: 40px 10px;
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  header #check:checked ~ ul {
+    display: block;
+  }
+}
+header #check {
+  display: none;
+}
+header .checkbtn {
+  font-size: 20px;
+  display: none;
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  header .checkbtn {
+    display: block;
+    font-size: 30px;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1132px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+header nav img {
+  border-radius: 300px;
+  width: 200px;
+}
+header nav ul {
+  display: flex;
+  align-self: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  header nav ul {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    text-align: center;
+    align-content: center;
+  }
+}
+header nav ul li {
+  margin: 20px auto;
+  list-style: none;
+}
+@media only screen and (max-width: 1132px) {
+  header nav ul li {
+    margin: 20px auto;
+    list-style: none;
+  }
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  margin: 40px;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 1132px) {
+  header nav ul li a {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
 footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -23,6 +118,11 @@ footer ul li {
   list-style: none;
   margin: 0 15px;
 }
+@media only screen and (max-width: 1132px) {
+  footer ul li {
+    margin: 10px 20px;
+  }
+}
 footer a {
   text-decoration: none;
   color: black;
@@ -33,43 +133,6 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
-}
-
-header {
-  margin: 40px 10px;
-}
-header #check {
-  display: none;
-}
-header .checkbtn {
-  font-size: 20px;
-  display: none;
-}
-header nav {
-  display: flex;
-  align-items: center;
-}
-header nav img {
-  border-radius: 300px;
-  width: 200px;
-}
-header nav ul {
-  display: flex;
-  align-self: center;
-  margin-bottom: 0;
-  padding-left: 0;
-  width: 100%;
-}
-header nav ul li {
-  margin: 20px auto;
-  list-style: none;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: large;
-  margin: 40px;
-  letter-spacing: 2px;
 }
 
 /* Pages */
@@ -91,6 +154,11 @@ header nav ul li a {
   margin: 30px 0;
   width: 500px;
 }
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .contactos form {
+    width: 73%;
+  }
+}
 .contactos .formulario input {
   width: 100%;
   height: 30px;
@@ -106,17 +174,54 @@ header nav ul li a {
   height: 30px;
 }
 
+.fotos-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  align-items: center;
+}
+@media only screen and (max-width: 1132px) {
+  .fotos-container {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .fotos-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .fotos-container .parrafo {
   margin: 0 10px 0 10px;
   text-align: justify;
 }
 .fotos-container .fotos {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   column-gap: 40px;
   row-gap: 40px;
   margin: 40px auto;
+}
+@media only screen and (max-width: 1132px) {
+  .fotos-container .fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .fotos-container .fotos {
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
 }
 .fotos-container article {
   width: 350px;
@@ -148,6 +253,14 @@ header nav ul li a {
   column-gap: 30px;
   margin: 60px 20px;
 }
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
 .index .titulo {
   font-family: "Playwrite DE Grund", cursive;
   font-weight: 400;
@@ -158,17 +271,43 @@ header nav ul li a {
 .index .carousel {
   grid-area: carousel;
 }
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index .carousel {
+    max-width: 100%;
+  }
+}
 .index .carousel-inner {
   height: 700px;
 }
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index .carousel-inner {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  .index .carousel-inner {
+    height: auto;
+  }
+}
 .index .carousel-item {
   max-height: 700px;
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index .carousel-item {
+    width: 100%;
+  }
 }
 .index .carousel-item img {
   max-width: 100%;
   max-height: 700px;
   display: block;
   margin: auto;
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index .carousel-item img {
+    width: 100%;
+    object-fit: fill;
+  }
 }
 .index .mapa {
   grid-area: mapa;
@@ -179,19 +318,54 @@ header nav ul li a {
   grid-area: info;
   justify-self: center;
 }
+@media only screen and (max-width: 1132px) {
+  .index .info {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index .info li {
+    line-height: 30px;
+  }
+}
 .index img {
   width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  .index img {
+    max-width: 100%;
+  }
+}
 .index ul li {
   list-style: none;
   text-align: center;
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index ul li {
+    line-height: 30px;
+  }
 }
 
 .nosotras .perfil-uno {
   display: grid;
   grid-template-columns: 400px auto;
   margin: 40px 20px;
+}
+@media only screen and (max-width: 1132px) {
+  .nosotras .perfil-uno {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 .nosotras .perfil-uno p {
   line-height: 30px;
@@ -201,10 +375,25 @@ header nav ul li a {
   height: auto;
   max-width: 100%;
 }
+@media only screen and (max-width: 1132px) {
+  .nosotras .foto {
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+  }
+}
 .nosotras .perfil-dos {
   display: grid;
   grid-template-columns: auto 400px;
   margin: 40px 20px;
+}
+@media only screen and (max-width: 1132px) {
+  .nosotras .perfil-dos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 .nosotras .perfil-dos p {
   line-height: 30px;
@@ -215,21 +404,42 @@ header nav ul li a {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
 }
 .articles .titulo {
-  grid-area: titulo;
   text-align: center;
   margin-top: 40px;
 }
 .articles .box-articulos {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   column-gap: 40px;
   row-gap: 40px;
   margin: 40px auto;
 }
-.articles .articulos {
+@media only screen and (max-width: 1132px) {
+  .articles .box-articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .articles .box-articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+}
+.articles .box-articulos .articulos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,10 +447,14 @@ header nav ul li a {
   border: 1px solid teal;
   border-radius: 20px;
   box-shadow: 5px -7px teal;
+  width: 350px;
+  height: 400px;
+  text-align: center;
 }
 .articles img {
   width: 300px;
   height: 200px;
+  align-self: center;
 }
 .articles p {
   text-align: center;

@@ -1,12 +1,44 @@
-.fotos-container{
+.fotos-container {
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    align-items: center;
+    
+    @include desktop {
+        margin-bottom: 40px;
+    }
+
+    @include phone {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .parrafo {
         margin: 0 10px 0 10px;
         text-align: justify;
     }
     
     .fotos {
-        @include card();
+        @include card ;
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            column-gap: 40px;
+            row-gap: 40px;
+            margin-top: 40px;
+        }
+
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            column-gap: 40px;
+            row-gap: 40px;
+            margin-top: 40px;
+        }
     }
     
     article {

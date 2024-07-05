@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
 /* Utilities */
+@import './utilities/normalize';
 @import './utilities/mixin';
 @import './utilities/variables';
 
 /* Global */
 
-@import './global/footer';
+@import './global/body';
 @import './global/header';
+@import './global/footer';
 
 /* Pages */
 

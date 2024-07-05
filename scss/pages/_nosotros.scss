@@ -4,6 +4,13 @@
         grid-template-columns: 400px auto;
         margin: 40px 20px;
 
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
         p {
             line-height: 30px;
         }
@@ -13,12 +20,25 @@
         width: 100%;
         height: auto;
         max-width: 100%;
+
+        @include desktop {
+            margin: 20px auto;
+            width: 100%;
+            height: auto;
+        }
     }
     
     .perfil-dos {
         display: grid;
         grid-template-columns: auto 400px;
         margin: 40px 20px;
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
 
         p {
             line-height: 30px;
