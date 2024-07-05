@@ -107,6 +107,15 @@ footer {
   border-top: 1px solid black;
   background-color: white;
 }
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
 footer ul {
   display: flex;
   flex-direction: row;
@@ -118,7 +127,7 @@ footer ul li {
   list-style: none;
   margin: 0 15px;
 }
-@media only screen and (max-width: 1132px) {
+@media only screen and (max-width: 742px) and (min-width: 400px) {
   footer ul li {
     margin: 10px 20px;
   }
