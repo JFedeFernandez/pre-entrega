@@ -27,6 +27,7 @@
 
     .carousel {
         grid-area: carousel;
+        height: auto;
 
         @include phone {
             max-width: 100%;
@@ -34,7 +35,7 @@
     }
     
     .carousel-inner {
-        height: 700px;
+        height: auto;
     
         @include phone {
             height: auto;
@@ -46,7 +47,7 @@
     }
     
     .carousel-item {
-        max-height: 700px;
+        height: auto;
 
         @include phone {
             width: 100%;
@@ -85,19 +86,6 @@
             @include phone {
                 line-height: 30px;
             }
-        }
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-
-        @include phone {
-            max-width: 100%;
-        }
-
-        @include desktop {
-            max-width: 100%;
         }
     }
 

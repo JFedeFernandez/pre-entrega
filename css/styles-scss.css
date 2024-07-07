@@ -307,6 +307,7 @@ footer p {
 }
 .index .carousel {
   grid-area: carousel;
+  height: auto;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index .carousel {
@@ -314,7 +315,7 @@ footer p {
   }
 }
 .index .carousel-inner {
-  height: 700px;
+  height: auto;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index .carousel-inner {
@@ -327,7 +328,7 @@ footer p {
   }
 }
 .index .carousel-item {
-  max-height: 700px;
+  height: auto;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index .carousel-item {
@@ -365,20 +366,6 @@ footer p {
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index .info li {
     line-height: 30px;
-  }
-}
-.index img {
-  width: 100%;
-  height: auto;
-}
-@media only screen and (max-width: 742px) and (min-width: 400px) {
-  .index img {
-    max-width: 100%;
-  }
-}
-@media only screen and (max-width: 1132px) {
-  .index img {
-    max-width: 100%;
   }
 }
 .index ul li {
