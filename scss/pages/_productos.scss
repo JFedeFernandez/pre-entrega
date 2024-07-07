@@ -15,6 +15,7 @@
     }
 
     .titulo {
+        font-family: $font-global;
         text-align: center;
         margin-top: 40px;
     }
@@ -61,13 +62,17 @@
         align-self: center;
     }
 
-    p {
-        text-align: center;
-        font-style: italic;
+    h2 {
+        font-family: $font-global;
+        margin-bottom: 0px;
     }
 
-    h2 {
-        margin: 5px;
+
+    p {
+        @extend h2;
+        text-align: center;
+        font-style: italic;
+        margin: 10px auto;
     }
 
     a {
