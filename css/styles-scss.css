@@ -451,6 +451,7 @@ footer p {
   }
 }
 .articles .titulo {
+  font-family: "Playwrite DE Grund", cursive;
   text-align: center;
   margin-top: 40px;
 }
@@ -500,12 +501,14 @@ footer p {
   height: 200px;
   align-self: center;
 }
+.articles h2, .articles p {
+  font-family: "Playwrite DE Grund", cursive;
+  margin-bottom: 0px;
+}
 .articles p {
   text-align: center;
   font-style: italic;
-}
-.articles h2 {
-  margin: 5px;
+  margin: 10px auto;
 }
 .articles a {
   text-decoration: none;
