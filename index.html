@@ -12,10 +12,32 @@
     <header>
         <nav>
             <img src="./assets/img/logo.png" alt="logo-empresarial">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars fa-lg"></i>
-            </label>
+            <button id="btn-menu" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-bars fa-2xl    "></i></button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./pages/fotos.html"><i class="fa-regular fa-image"></i> Fotos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/productos.html"><i class="fa-solid fa-cart-shopping"></i> Productos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/nosotros.html"><i class="fa-solid fa-circle-info"></i> Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html"><i class="fa-regular fa-envelope"></i> Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <ul>
                 <li>
                     <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>

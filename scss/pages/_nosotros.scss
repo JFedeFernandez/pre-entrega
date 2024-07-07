@@ -1,4 +1,5 @@
 .nosotras {
+    margin-bottom: 70px;
     .perfil-uno {
         display: grid;
         grid-template-columns: 400px auto;
@@ -9,6 +10,11 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
+            margin-bottom: 70px;
+        }
+
+        @include phone {
+            margin-bottom: 70px;
         }
 
         p {
