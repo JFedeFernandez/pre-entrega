@@ -356,8 +356,9 @@ footer p {
 }
 @media only screen and (max-width: 400px) and (min-width: 300px) {
   .fotos-container .fotos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 .fotos-container article {
