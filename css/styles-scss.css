@@ -37,6 +37,11 @@ header nav #btn-menu {
     display: inline;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  header nav #btn-menu {
+    display: inline;
+  }
+}
 @media only screen and (max-width: 1132px) {
   header nav {
     display: flex;
@@ -44,6 +49,13 @@ header nav #btn-menu {
   }
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
   header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,6 +76,16 @@ header nav img {
     margin: 0px;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  header nav .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header nav .navbar ul li {
+    margin: 0px;
+  }
+}
 header nav ul {
   display: flex;
   align-self: center;
@@ -72,6 +94,17 @@ header nav ul {
   width: 100%;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
+  header nav ul {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #546194;
+    text-align: center;
+    align-content: center;
+  }
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
   header nav ul {
     display: none;
     position: fixed;
@@ -133,6 +166,15 @@ footer {
     height: auto;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
 footer ul {
   display: flex;
   flex-direction: row;
@@ -181,6 +223,14 @@ footer p {
     margin-bottom: 70px;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .contactos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .contactos p {
   color: #1E3309;
   font-family: "Playwrite DE Grund", cursive;
@@ -196,18 +246,27 @@ footer p {
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .contactos form {
-    width: 73%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .contactos .formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
   }
 }
 .contactos .formulario label {
   color: #1E3309;
   font-weight: bold;
   font-family: "Playwrite DE Grund", cursive;
+  width: 100%;
 }
 .contactos .formulario input {
   width: 100%;
   height: 30px;
-  margin: 10px 5px;
+  margin: 10px auto;
 }
 .contactos .formulario input:focus {
   outline: none;
@@ -217,7 +276,7 @@ footer p {
 .contactos .formulario textarea {
   width: 100%;
   height: 100px;
-  margin: 10px 5px;
+  margin: 10px auto;
 }
 .contactos .formulario textarea:focus {
   outline: none;
@@ -231,6 +290,11 @@ footer p {
   border: none;
   border-radius: 10px;
   color: #E6FBD1;
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .contactos .formulario button {
+    width: 100%;
+  }
 }
 
 .fotos-container {
@@ -252,9 +316,14 @@ footer p {
     margin-bottom: 70px;
   }
 }
-.fotos-container .parrafo {
-  margin: 0 10px 0 10px;
-  text-align: justify;
+.fotos-container .p-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.fotos-container .p-content .parrafo {
   color: #1E3309;
   font-family: "Playwrite DE Grund", cursive;
 }
@@ -285,6 +354,12 @@ footer p {
     margin-top: 40px;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .fotos-container .fotos {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .fotos-container article {
   width: 350px;
   height: 400px;
@@ -294,6 +369,12 @@ footer p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #E6FBD1;
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .fotos-container article {
+    width: 100%;
+    height: 300px;
+  }
+}
 .fotos-container article:hover {
   transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
@@ -301,6 +382,12 @@ footer p {
 .fotos-container article img {
   width: 300px;
   height: 200px;
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .fotos-container article img {
+    width: 100%;
+    height: auto;
+  }
 }
 .fotos-container article p {
   text-align: center;
@@ -330,12 +417,20 @@ footer p {
   column-gap: 30px;
   margin: 60px 20px;
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px 70px 10px;
+  }
+}
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 70px;
+    margin: 0px 10px 70px 10px;
   }
 }
 .index .titulo {
@@ -349,6 +444,12 @@ footer p {
 .index .carousel {
   grid-area: carousel;
   height: auto;
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .index .carousel {
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index .carousel {
@@ -393,6 +494,21 @@ footer p {
   width: 100%;
   justify-self: right;
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .index .mapa {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 742px) and (min-width: 400px) {
+  .index .mapa {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  .index .mapa {
+    height: auto;
+  }
+}
 .index .info {
   font-family: "Playwrite DE Grund", cursive;
   grid-area: info;
@@ -409,6 +525,12 @@ footer p {
   .index .info li {
     line-height: 30px;
   }
+}
+.index .info li .fa-location-dot {
+  color: #ed333b;
+}
+.index .info li .fa-whatsapp {
+  color: #25D366;
 }
 .index ul li {
   list-style: none;
@@ -540,6 +662,13 @@ footer p {
     margin-top: 40px;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .articles .box-articulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
 .articles .box-articulos .articulos {
   display: flex;
   flex-direction: column;
@@ -552,16 +681,26 @@ footer p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #E6FBD1;
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .articles .box-articulos .articulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 400px;
+  }
+}
 .articles .box-articulos .articulos h2, .articles .box-articulos .articulos p {
   font-family: "Playwrite DE Grund", cursive;
   margin-bottom: 0px;
   color: #1E3309;
+  width: 100%;
 }
 .articles .box-articulos .articulos p {
   text-align: center;
   font-style: italic;
   margin: 10px auto;
   color: #545C4C;
+  width: 100%;
 }
 .articles .box-articulos .articulos a {
   font-family: "Playwrite DE Grund", cursive;
@@ -570,6 +709,12 @@ footer p {
   background-color: #546194;
   border-radius: 10px;
   padding: 10px;
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .articles .box-articulos .articulos img {
+    width: 100%;
+    height: auto;
+  }
 }
 .articles .box-articulos .articulos:hover {
   transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */

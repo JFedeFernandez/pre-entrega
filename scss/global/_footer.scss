@@ -15,6 +15,14 @@ footer {
         height: auto;
     }
 
+    @include phone-little {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
     ul {
         display: flex;
         flex-direction: row;

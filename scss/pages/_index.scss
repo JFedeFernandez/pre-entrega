@@ -10,11 +10,18 @@
     column-gap: 30px;
     margin: 60px 20px;
 
+    @include phone-little {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 10px 70px 10px;
+    }
+
     @include phone {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 70px;
+        margin: 0px 10px 70px 10px;
     }
 
     .titulo {
@@ -29,6 +36,11 @@
     .carousel {
         grid-area: carousel;
         height: auto;
+
+        @include phone-little {
+            width: 100%;
+            height: auto;
+        }
 
         @include phone {
             max-width: 100%;
@@ -71,6 +83,18 @@
         grid-area: mapa;
         width: 100%;
         justify-self: right;
+
+        @include phone-little {
+            height: auto;
+        }
+
+        @include phone {
+            height: auto;
+        }
+
+        @include desktop {
+            height: auto;
+        }
     }
     
     .info {
@@ -87,6 +111,14 @@
         li {
             @include phone {
                 line-height: 30px;
+            }
+
+            .fa-location-dot {
+                color: $red;
+            }
+
+            .fa-whatsapp {
+                color: $verde-claro2;
             }
         }
     }

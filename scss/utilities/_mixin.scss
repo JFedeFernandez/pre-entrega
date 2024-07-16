@@ -7,6 +7,13 @@
     margin: 40px auto;
 }
 
+@mixin phone-little {
+    @media only screen and (max-width: #{$phone}) and (min-width: #{$phone-little}) {
+        @content;
+    }
+
+}
+
 @mixin phone {
     @media only screen and (max-width: #{$tablet}) and (min-width: #{$phone}) {
         @content;
