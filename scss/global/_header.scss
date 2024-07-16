@@ -39,13 +39,13 @@ header {
         @include phone {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-items: center;
+            align-content: center;
         }
 
         @include phone-little {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-items: center;
+            align-content: center;
         }
 
         img {
