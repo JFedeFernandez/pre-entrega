@@ -18,11 +18,12 @@
         font-family: $font-global;
         text-align: center;
         margin-top: 40px;
+        color: $verde-oscuro;
     }
 
     .box-articulos {
         @include card;
-        
+
         @include desktop {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -47,12 +48,41 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px;
-            border: 1px solid teal;
             border-radius: 20px;
-            box-shadow: 5px -7px teal;
             width: 350px;
             height: 400px;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: $verde-claro;
+
+            h2 {
+                font-family: $font-global;
+                margin-bottom: 0px;
+                color: $verde-oscuro;
+            }
+        
+        
+            p {
+                @extend h2;
+                text-align: center;
+                font-style: italic;
+                margin: 10px auto;
+                color: $verde-intermedio;
+            }
+        
+            a {
+                font-family: $font-global;
+                text-decoration: none;
+                color: $verde-claro;
+                background-color: $azul2;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+
+        .articulos:hover {
+            transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
         }
     }
 
@@ -62,24 +92,4 @@
         align-self: center;
     }
 
-    h2 {
-        font-family: $font-global;
-        margin-bottom: 0px;
-    }
-
-
-    p {
-        @extend h2;
-        text-align: center;
-        font-style: italic;
-        margin: 10px auto;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        background-color: black;
-        border-radius: 10px;
-        padding: 10px;
-    }
 }

@@ -15,6 +15,8 @@
     }
 
     p {
+        color: $verde-oscuro;
+        font-family: $font-global;
         margin: 20px auto;
     }
 
@@ -32,21 +34,42 @@
     }
 
     .formulario {
+        label {
+            color: $verde-oscuro;
+            font-weight: bold;
+            font-family: $font-global;
+        }
         input {
             width: 100%;
             height: 30px;
             margin: 10px 5px;
+            
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 10px rgba(84,97,148,0.4);
+                border: 2px solid $azul2;
+            }
         }
 
         textarea {
             width: 100%;
             height: 100px;
             margin: 10px 5px;
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 10px rgba(84,97,148,0.4);
+                border: 2px solid $azul2;
+            }
         }
 
         button {
-            width: 50px;
+            width: 90px;
             height: 30px;
+            background-color: $azul2;
+            border: none;
+            border-radius: 10px;
+            color: $verde-claro;
         }
     }
 }

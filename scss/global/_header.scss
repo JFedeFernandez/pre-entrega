@@ -1,24 +1,16 @@
 header {
-    margin: 40px 10px;
-
-    /*@include phone {
-        #check:checked ~ ul {
-            display: block;
-        }
-    }*/
-
-    #check {
-        display: none;
+    height: 200px;
+    background-color: $azul2;
+    align-content: center;
+    padding: 0 10px;
+    
+    i{
+        color: $verde-claro;
     }
-    /*.checkbtn {
-        @include phone {
-            display: block;
-            font-size: 30px;
-        }
 
-        font-size: 20px;
-        display: none;
-    }*/
+    .offcanvas{
+        background: $azul2;
+    }
 
     .offcanvas.offcanvas-top {
         height: 500px; /* Establece la altura deseada para el offcanvas */
@@ -49,11 +41,10 @@ header {
 
         img {
             border-radius: 300px;
-            width: 200px;
+            width: 150px;
         }
 
         .navbar {
-            
             @include phone {
                 display: flex;
                 flex-direction: column;
@@ -78,15 +69,18 @@ header {
                 position: fixed;
                 width: 100%;
                 height: 100%;
-                background: white;
+                background: $azul2;
                 text-align: center;
                 align-content: center;
             }
 
             li {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
                 margin: 20px auto;
                 list-style: none;
-
+                &:hover {
+                    transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+                }
                 @include desktop {
                     margin: 20px auto;
                     list-style: none;
@@ -94,10 +88,11 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: $verde-claro;
                     font-size: large;
                     margin: 40px;
                     letter-spacing: 2px;
+                    font-family: $font-global;
 
                     @include desktop {
                         align-items: center;

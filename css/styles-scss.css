@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
 /* Utilities */
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
@@ -10,24 +11,16 @@
 
 /* Global */
 header {
-  margin: 40px 10px;
-  /*@include phone {
-      #check:checked ~ ul {
-          display: block;
-      }
-  }*/
-  /*.checkbtn {
-      @include phone {
-          display: block;
-          font-size: 30px;
-      }
-
-      font-size: 20px;
-      display: none;
-  }*/
+  height: 200px;
+  background-color: #546194;
+  align-content: center;
+  padding: 0 10px;
 }
-header #check {
-  display: none;
+header i {
+  color: #E6FBD1;
+}
+header .offcanvas {
+  background: #546194;
 }
 header .offcanvas.offcanvas-top {
   height: 500px; /* Establece la altura deseada para el offcanvas */
@@ -59,7 +52,7 @@ header nav #btn-menu {
 }
 header nav img {
   border-radius: 300px;
-  width: 200px;
+  width: 150px;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   header nav .navbar {
@@ -84,14 +77,18 @@ header nav ul {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #546194;
     text-align: center;
     align-content: center;
   }
 }
 header nav ul li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 20px auto;
   list-style: none;
+}
+header nav ul li:hover {
+  transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
 }
 @media only screen and (max-width: 1132px) {
   header nav ul li {
@@ -101,16 +98,21 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #E6FBD1;
   font-size: large;
   margin: 40px;
   letter-spacing: 2px;
+  font-family: "Playwrite DE Grund", cursive;
 }
 @media only screen and (max-width: 1132px) {
   header nav ul li a {
     align-items: center;
     margin: 0 auto;
   }
+}
+
+body {
+  background-color: white !important;
 }
 
 footer {
@@ -120,8 +122,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 40px;
-  border-top: 1px solid black;
-  background-color: white;
+  background-color: #546194;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   footer {
@@ -150,7 +151,7 @@ footer ul li {
 }
 footer a {
   text-decoration: none;
-  color: black;
+  color: #E6FBD1;
 }
 footer p {
   display: flex;
@@ -158,6 +159,7 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+  color: #E6FBD1;
 }
 
 /* Pages */
@@ -180,6 +182,8 @@ footer p {
   }
 }
 .contactos p {
+  color: #1E3309;
+  font-family: "Playwrite DE Grund", cursive;
   margin: 20px auto;
 }
 .contactos form {
@@ -195,19 +199,38 @@ footer p {
     width: 73%;
   }
 }
+.contactos .formulario label {
+  color: #1E3309;
+  font-weight: bold;
+  font-family: "Playwrite DE Grund", cursive;
+}
 .contactos .formulario input {
   width: 100%;
   height: 30px;
   margin: 10px 5px;
+}
+.contactos .formulario input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(84, 97, 148, 0.4);
+  border: 2px solid #546194;
 }
 .contactos .formulario textarea {
   width: 100%;
   height: 100px;
   margin: 10px 5px;
 }
+.contactos .formulario textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(84, 97, 148, 0.4);
+  border: 2px solid #546194;
+}
 .contactos .formulario button {
-  width: 50px;
+  width: 90px;
   height: 30px;
+  background-color: #546194;
+  border: none;
+  border-radius: 10px;
+  color: #E6FBD1;
 }
 
 .fotos-container {
@@ -232,6 +255,8 @@ footer p {
 .fotos-container .parrafo {
   margin: 0 10px 0 10px;
   text-align: justify;
+  color: #1E3309;
+  font-family: "Playwrite DE Grund", cursive;
 }
 .fotos-container .fotos {
   display: grid;
@@ -264,6 +289,14 @@ footer p {
   width: 350px;
   height: 400px;
   text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #E6FBD1;
+}
+.fotos-container article:hover {
+  transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
 }
 .fotos-container article img {
   width: 300px;
@@ -272,13 +305,20 @@ footer p {
 .fotos-container article p {
   text-align: center;
   font-style: italic;
+  color: #545C4C;
+  font-family: "Playwrite DE Grund", cursive;
 }
 .fotos-container article a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   text-decoration: none;
-  color: white;
-  background-color: black;
+  color: #546194;
   border-radius: 10px;
   padding: 10px;
+  font-weight: bold;
+  font-family: "Playwrite DE Grund", cursive;
 }
 
 .index {
@@ -304,6 +344,7 @@ footer p {
   grid-area: titulo;
   text-align: center;
   margin-top: 40px;
+  color: #1E3309;
 }
 .index .carousel {
   grid-area: carousel;
@@ -353,6 +394,7 @@ footer p {
   justify-self: right;
 }
 .index .info {
+  font-family: "Playwrite DE Grund", cursive;
   grid-area: info;
   justify-self: center;
 }
@@ -371,6 +413,7 @@ footer p {
 .index ul li {
   list-style: none;
   text-align: center;
+  color: #1E3309;
 }
 @media only screen and (max-width: 742px) and (min-width: 400px) {
   .index ul li {
@@ -384,7 +427,13 @@ footer p {
 .nosotras .perfil-uno {
   display: grid;
   grid-template-columns: 400px auto;
+  justify-content: center;
   margin: 40px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nosotras .perfil-uno:hover {
+  transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
 }
 @media only screen and (max-width: 1132px) {
   .nosotras .perfil-uno {
@@ -400,13 +449,11 @@ footer p {
     margin-bottom: 70px;
   }
 }
-.nosotras .perfil-uno p {
-  line-height: 30px;
-}
 .nosotras .foto {
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding: 20px;
 }
 @media only screen and (max-width: 1132px) {
   .nosotras .foto {
@@ -419,6 +466,11 @@ footer p {
   display: grid;
   grid-template-columns: auto 400px;
   margin: 40px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nosotras .perfil-dos:hover {
+  transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
 }
 @media only screen and (max-width: 1132px) {
   .nosotras .perfil-dos {
@@ -428,8 +480,11 @@ footer p {
     align-items: center;
   }
 }
-.nosotras .perfil-dos p {
+.nosotras p {
+  font-family: "Playwrite DE Grund", cursive;
+  color: #1E3309;
   line-height: 30px;
+  padding: 20px;
 }
 
 .articles {
@@ -454,6 +509,7 @@ footer p {
   font-family: "Playwrite DE Grund", cursive;
   text-align: center;
   margin-top: 40px;
+  color: #1E3309;
 }
 .articles .box-articulos {
   display: grid;
@@ -489,33 +545,40 @@ footer p {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  border: 1px solid teal;
   border-radius: 20px;
-  box-shadow: 5px -7px teal;
   width: 350px;
   height: 400px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #E6FBD1;
+}
+.articles .box-articulos .articulos h2, .articles .box-articulos .articulos p {
+  font-family: "Playwrite DE Grund", cursive;
+  margin-bottom: 0px;
+  color: #1E3309;
+}
+.articles .box-articulos .articulos p {
+  text-align: center;
+  font-style: italic;
+  margin: 10px auto;
+  color: #545C4C;
+}
+.articles .box-articulos .articulos a {
+  font-family: "Playwrite DE Grund", cursive;
+  text-decoration: none;
+  color: #E6FBD1;
+  background-color: #546194;
+  border-radius: 10px;
+  padding: 10px;
+}
+.articles .box-articulos .articulos:hover {
+  transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
 }
 .articles img {
   width: 300px;
   height: 200px;
   align-self: center;
-}
-.articles h2, .articles p {
-  font-family: "Playwrite DE Grund", cursive;
-  margin-bottom: 0px;
-}
-.articles p {
-  text-align: center;
-  font-style: italic;
-  margin: 10px auto;
-}
-.articles a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  border-radius: 10px;
-  padding: 10px;
 }
 
 /*# sourceMappingURL=styles-scss.css.map */

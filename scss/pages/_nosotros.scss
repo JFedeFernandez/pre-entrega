@@ -3,7 +3,13 @@
     .perfil-uno {
         display: grid;
         grid-template-columns: 400px auto;
+        justify-content: center;
         margin: 40px 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+        }
 
         @include desktop {
             display: flex;
@@ -17,15 +23,13 @@
             margin-bottom: 70px;
         }
 
-        p {
-            line-height: 30px;
-        }
     }
     
     .foto {
         width: 100%;
         height: auto;
         max-width: 100%;
+        padding: 20px;
 
         @include desktop {
             margin: 20px auto;
@@ -38,6 +42,12 @@
         display: grid;
         grid-template-columns: auto 400px;
         margin: 40px 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px); /* Efecto de levantar al pasar el mouse */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+        }
 
         @include desktop {
             display: flex;
@@ -46,8 +56,12 @@
             align-items: center;
         }
 
-        p {
-            line-height: 30px;
-        }
+    }
+    
+    p {
+        font-family: $font-global;
+        color: $verde-oscuro;
+        line-height: 30px;
+        padding: 20px;
     }
 }

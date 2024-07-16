@@ -5,8 +5,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 40px;
-    border-top: 1px solid black;
-    background-color: white;
+    background-color: $azul2;
 
     @include phone {
         display: flex;
@@ -35,7 +34,7 @@ footer {
 
     a {
         text-decoration: none;
-        color: black;
+        color: $verde-claro;
     }
 
     p {
@@ -44,5 +43,6 @@ footer {
         justify-content: center;
         align-items: center;
         margin-bottom: 0;
+        color: $verde-claro;
     }
 }

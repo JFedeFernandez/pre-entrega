@@ -23,6 +23,7 @@
         grid-area: titulo;
         text-align: center;
         margin-top: 40px;
+        color: $verde-oscuro;
     }
 
     .carousel {
@@ -73,9 +74,10 @@
     }
     
     .info {
+        font-family: $font-global;
         grid-area: info;
         justify-self: center;
-
+        
         @include desktop {
             display: flex;
             flex-direction: column;
@@ -94,7 +96,7 @@
         li{
             list-style: none;
             text-align: center;
-
+            color: $verde-oscuro;
             @include phone {
                 line-height: 30px;
             }
