@@ -101,7 +101,7 @@
         font-family: $font-global;
         grid-area: info;
         justify-self: center;
-        
+        padding-left: 0 !important;
         @include desktop {
             display: flex;
             flex-direction: column;
@@ -124,7 +124,7 @@
     }
 
     ul {
-
+        padding-left: 0 !important;
         li{
             list-style: none;
             text-align: center;

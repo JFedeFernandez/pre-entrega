@@ -14,6 +14,12 @@
         margin-bottom: 70px;
     }
 
+    @include phone-little {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
     .titulo {
         font-family: $font-global;
         text-align: center;
@@ -50,25 +56,49 @@
         }
 
         .articulos {
-            display: flex;
+            display: grid;
+            grid-template-areas:
+            'foto'
+            'titulo'
+            'subtitulo'
+            'parrafo'
+            'boton';
+            grid-template-columns: 1fr;
+            align-items: center;
+            width: 350px;
+            text-align: center;
+            border-radius: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: $verde-claro;
+            /*display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 20px;
             border-radius: 20px;
             width: 350px;
-            height: 400px;
+            height: auto;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background-color: $verde-claro;
+            background-color: $verde-claro;*/
 
             @include phone-little {
                 display: grid;
                 grid-template-columns: 1fr;
                 width: 100%;
-                height: 400px;
+                height: auto;
             }
 
             h2 {
+                grid-area: titulo;
+                font-family: $font-global;
+                margin-bottom: 0px;
+                color: $verde-oscuro;
+                width: 100%;
+            }
+            
+            h3 {
+                grid-area: subtitulo;
                 font-family: $font-global;
                 margin-bottom: 0px;
                 color: $verde-oscuro;
@@ -77,6 +107,7 @@
         
         
             p {
+                grid-area: parrafo;
                 @extend h2;
                 text-align: center;
                 font-style: italic;
@@ -86,6 +117,7 @@
             }
         
             a {
+                grid-area: boton;
                 font-family: $font-global;
                 text-decoration: none;
                 color: $verde-claro;
@@ -95,6 +127,8 @@
             }
 
             img {
+                grid-area: foto;
+                width: 100%;
                 @include phone-little {
                     width: 100%;
                     height: auto;
@@ -109,6 +143,7 @@
     }
 
     img {
+        grid-area: foto;
         width: 300px;
         height: 200px;
         align-self: center;
