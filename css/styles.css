@@ -632,6 +632,13 @@ footer p {
     margin-bottom: 70px;
   }
 }
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
 .articles .titulo {
   font-family: "Playwrite DE Grund", cursive;
   text-align: center;
@@ -672,17 +679,19 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    height: auto;
   }
 }
 .articles .box-articulos .articulos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "foto" "titulo" "subtitulo" "parrafo" "boton";
+  grid-template-columns: 1fr;
+  align-items: center;
   width: 350px;
-  height: 400px;
+  height: auto;
   text-align: center;
+  border-radius: 20px;
+  padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #E6FBD1;
 }
@@ -691,16 +700,25 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    height: 400px;
+    height: auto;
   }
 }
 .articles .box-articulos .articulos h2, .articles .box-articulos .articulos p {
+  grid-area: titulo;
+  font-family: "Playwrite DE Grund", cursive;
+  margin-bottom: 0px;
+  color: #1E3309;
+  width: 100%;
+}
+.articles .box-articulos .articulos h3 {
+  grid-area: subtitulo;
   font-family: "Playwrite DE Grund", cursive;
   margin-bottom: 0px;
   color: #1E3309;
   width: 100%;
 }
 .articles .box-articulos .articulos p {
+  grid-area: parrafo;
   text-align: center;
   font-style: italic;
   margin: 10px auto;
@@ -708,12 +726,17 @@ footer p {
   width: 100%;
 }
 .articles .box-articulos .articulos a {
+  grid-area: boton;
   font-family: "Playwrite DE Grund", cursive;
   text-decoration: none;
   color: #E6FBD1;
   background-color: #546194;
   border-radius: 10px;
   padding: 10px;
+}
+.articles .box-articulos .articulos img {
+  grid-area: foto;
+  width: 100%;
 }
 @media only screen and (max-width: 400px) and (min-width: 300px) {
   .articles .box-articulos .articulos img {
@@ -726,6 +749,7 @@ footer p {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
 }
 .articles img {
+  grid-area: foto;
   width: 300px;
   height: 200px;
   align-self: center;
