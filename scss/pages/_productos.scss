@@ -53,6 +53,7 @@
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
+            height: auto;
         }
 
         .articulos {
@@ -66,21 +67,12 @@
             grid-template-columns: 1fr;
             align-items: center;
             width: 350px;
+            height: auto;
             text-align: center;
             border-radius: 20px;
             padding: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             background-color: $verde-claro;
-            /*display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
-            border-radius: 20px;
-            width: 350px;
-            height: auto;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background-color: $verde-claro;*/
 
             @include phone-little {
                 display: grid;
