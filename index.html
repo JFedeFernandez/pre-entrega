@@ -14,56 +14,56 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <img src="./assets/img/logo.png" alt="Logo de La Celestina - Casa de Artesanías y Manualidades">
-            <button id="btn-menu" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-bars fa-2xl"></i></button>
+            <button id="btn-menu" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-label="Abrir menú"><i class="fa-solid fa-bars fa-2xl"></i></button>
 
             <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar">
+                    <ul class="navbar" role="list">
                         <li>
-                            <a href="#" aria-current="page"><i class="fa-solid fa-house"></i> Inicio</a>
+                            <a href="#" aria-current="page" role="listitem"><i class="fa-solid fa-house"></i> Inicio</a>
                         </li>
                         <li>
-                            <a href="./pages/fotos.html"><i class="fa-regular fa-image"></i> Fotos</a>
+                            <a href="./pages/fotos.html" role="listitem"><i class="fa-regular fa-image"></i> Fotos</a>
                         </li>
                         <li>
-                            <a href="./pages/productos.html"><i class="fa-solid fa-cart-shopping"></i> Productos</a>
+                            <a href="./pages/productos.html" role="listitem"><i class="fa-solid fa-cart-shopping"></i> Productos</a>
                         </li>
                         <li>
-                            <a href="./pages/nosotros.html"><i class="fa-solid fa-circle-info"></i> Nosotros</a>
+                            <a href="./pages/nosotros.html" role="listitem"><i class="fa-solid fa-circle-info"></i> Nosotros</a>
                         </li>
                         <li>
-                            <a href="./pages/contacto.html"><i class="fa-regular fa-envelope"></i> Contacto</a>
+                            <a href="./pages/contacto.html" role="listitem"><i class="fa-regular fa-envelope"></i> Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <ul>
+            <ul role="list">
                 <li>
-                    <a href="#" aria-current="page"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <a href="#" aria-current="page" role="listitem"><i class="fa-solid fa-house"></i> Inicio</a>
                 </li>
                 <li>
-                    <a href="./pages/fotos.html"><i class="fa-regular fa-image"></i> Fotos</a>
+                    <a href="./pages/fotos.html" role="listitem"><i class="fa-regular fa-image"></i> Fotos</a>
                 </li>
                 <li>
-                    <a href="./pages/productos.html"><i class="fa-solid fa-cart-shopping"></i> Productos</a>
+                    <a href="./pages/productos.html" role="listitem"><i class="fa-solid fa-cart-shopping"></i> Productos</a>
                 </li>
                 <li>
-                    <a href="./pages/nosotros.html"><i class="fa-solid fa-circle-info"></i> Nosotros</a>
+                    <a href="./pages/nosotros.html" role="listitem"><i class="fa-solid fa-circle-info"></i> Nosotros</a>
                 </li>
                 <li>
-                    <a href="./pages/contacto.html"><i class="fa-regular fa-envelope"></i> Contacto</a>
+                    <a href="./pages/contacto.html" role="listitem"><i class="fa-regular fa-envelope"></i> Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="index">
         <h1 class="titulo">La Celestina</h1>
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" aria-label="Carrusel de imágenes">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="1000">
                     <img src="../pre-entrega/assets/img/ovillo-de-lana.png" class="d-block w-100" alt="Ovillo de lana">
@@ -75,32 +75,36 @@
                     <img src="../pre-entrega/assets/img/hoja-artesanias.png" class="d-block" alt="Hoja artesanales">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" aria-label="Slide anterior">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" aria-label="Slide siguiente">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d395.98707019724384!2d-65.29236228863813!3d-32.732042611263275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1716384364073!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <ul class="info">
-            <li><i class="fa-solid fa-location-dot"></i> Av. San Martín</li>
-            <li>Tilisarao, San Luis, Argentina.</li>
-            <li><i class="fa-brands fa-whatsapp"></i> +54 9 2664 834226</li>
-        </ul>
+        <section aria-labelledby="ubicacion">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d395.98707019724384!2d-65.29236228863813!3d-32.732042611263275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1716384364073!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de La Celestina en Tilisarao, San Luis, Argentina"></iframe>
+        </section>
+        <section aria-labelledby="contacto">
+            <ul class="info">
+                <li><i class="fa-solid fa-location-dot"></i> Av. San Martín</li>
+                <li>Tilisarao, San Luis, Argentina.</li>
+                <li><i class="fa-brands fa-whatsapp"></i> +54 9 2664 834226</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <ul>
             <li>
-                <a class="fa-brands fa-instagram" href="#" aria-label="Síguenos en Instagram"></a>
+                <a class="fa-brands fa-instagram" href="#" aria-label="Síguenos en Instagram" aria-hidden="true"></a>
             </li>
             <li>
-                <a class="fa-brands fa-x-twitter" href="#" aria-label="Síguenos en Twitter"></a>
+                <a class="fa-brands fa-x-twitter" href="#" aria-label="Síguenos en Twitter" aria-hidden="true"></a>
             </li>
             <li>
-                <a class="fa-brands fa-facebook" href="#" aria-label="Síguenos en Facebook"></a>
+                <a class="fa-brands fa-facebook" href="#" aria-label="Síguenos en Facebook" aria-hidden="true"></a>
             </li>
         </ul>
         <p>&copy; 2024 La Celestina.</p>
