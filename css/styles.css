@@ -527,6 +527,7 @@ footer p {
 }
 .index .info {
   font-family: "Playwrite DE Grund", cursive;
+  grid-area: info;
   justify-self: center;
   padding-left: 0 !important;
 }

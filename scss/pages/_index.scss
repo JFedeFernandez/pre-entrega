@@ -79,27 +79,27 @@
         }
     }
     
-
     .mapa {
         grid-area: mapa;
         width: 100%;
         justify-self: right;
-    
+
         @include phone-little {
             height: auto;
         }
-    
+
         @include phone {
             height: auto;
         }
-    
+
         @include desktop {
             height: auto;
         }
     }
-
+    
     .info {
         font-family: $font-global;
+        grid-area: info;
         justify-self: center;
         padding-left: 0 !important;
         @include desktop {
@@ -107,22 +107,22 @@
             flex-direction: column;
             justify-self: center;
         }
-    
+
         li {
             @include phone {
                 line-height: 30px;
             }
-    
+
             .fa-location-dot {
                 color: $red;
             }
-    
+
             .fa-whatsapp {
                 color: $verde-claro2;
             }
         }
     }
-    
+
     ul {
         padding-left: 0 !important;
         li{
@@ -133,6 +133,6 @@
                 line-height: 30px;
             }
         }
-    
+
     }
 }
