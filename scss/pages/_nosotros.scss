@@ -1,5 +1,13 @@
 .nosotras {
     margin-bottom: 70px;
+
+    h1 {
+        text-align: center;
+        margin: 40px auto;
+        font-family: $font-global;
+        color: $verde-oscuro;
+    }
+    
     .perfil-uno {
         display: grid;
         grid-template-columns: 400px auto;

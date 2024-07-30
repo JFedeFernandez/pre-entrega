@@ -21,6 +21,12 @@
         align-items: center;
     }
 
+    h1 {
+        font-family: $font-global;
+        color: $verde-oscuro;
+        margin: 40px auto;
+    }
+
     p {
         color: $verde-oscuro;
         font-family: $font-global;
