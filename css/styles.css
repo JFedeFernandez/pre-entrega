@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
 /* Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +8,13 @@
   position: relative;
 }
 
+@font-face {
+  font-family: "Playwrite DE Grund";
+  font-style: normal;
+  font-weight: 100 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playwritedegrund/v4/EJRLQhwoXdccriFurnRxqv-1MFyKy69g9Q.woff2) format("woff2");
+}
 /* Global */
 header {
   height: 200px;
