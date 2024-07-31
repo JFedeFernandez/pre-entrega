@@ -17,10 +17,10 @@
 }
 /* Global */
 header {
-  height: 200px;
+  height: auto;
   background-color: #546194;
   align-content: center;
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 header i {
   color: #E6FBD1;
