@@ -246,6 +246,7 @@ footer p {
   color: #1E3309;
   font-family: "Playwrite DE Grund", cursive;
   margin: 20px auto;
+  font-size: 20px;
 }
 .contactos form {
   display: flex;
@@ -342,6 +343,7 @@ footer p {
 .fotos-container .p-content .parrafo {
   color: #1E3309;
   font-family: "Playwrite DE Grund", cursive;
+  font-size: 20px;
 }
 .fotos-container .fotos {
   display: grid;
@@ -637,8 +639,9 @@ footer p {
 .nosotras p {
   font-family: "Playwrite DE Grund", cursive;
   color: #1E3309;
-  line-height: 30px;
+  line-height: 50px;
   padding: 20px;
+  font-size: 20px;
 }
 
 .articles {
