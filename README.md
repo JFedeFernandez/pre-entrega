@@ -13,7 +13,7 @@ Para ver la página web en acción:
 3. Abre el archivo `index.html` en tu navegador web.
 
 Otra forma de ver la página en accion:
-1. Ingresa al siguiente link: http://lacelestina.rf.gd
+1. Ingresa al siguiente link: http://lacelestina.infinityfreeapp.com/?i=1
 
 Si deseas realizar modificaciones o personalizar la página, edita los archivos `*.html`, `*.scss`, y `*.css` según tus necesidades. Los cambios se reflejarán inmediatamente en la vista previa del navegador.
 
